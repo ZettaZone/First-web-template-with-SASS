@@ -1,0 +1,57 @@
+//extend
+.item-position{
+    padding: 5rem 0;
+    text-align: center;
+}
+.W_F{
+    width: 65%;
+    float: left;
+ } 
+
+ .W_F2{
+    width: 35%;
+    float: left;
+ } 
+
+ .h2{
+    font-size:  $font_size;
+    color:$p_color;
+}
+.span{
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: $primary_color;
+    margin: 1rem auto;
+}
+.p{
+    margin: 1.5rem 0;
+    color:$link_color;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.button{
+    background: $primary_color;
+    color:$p_color;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding:15px 30px;
+    border:0;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: 0;
+    @include trans(0.9s);
+    
+    &:hover{
+        background: $p_color;
+        color:$primary_color;
+    }
+}
+.form{
+    box-sizing: border-box;
+    padding: 14px;
+    margin-bottom: 20px;
+    outline: 0;
+    font-size:12px;
+}

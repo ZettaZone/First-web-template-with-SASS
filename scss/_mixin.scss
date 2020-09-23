@@ -1,0 +1,27 @@
+@mixin trans($r) {
+    transition: all $r ease-in-out;  
+}
+
+@mixin Sm {
+    @media(max-width:768px) {
+        @content;
+    }
+}
+
+@mixin Xs {
+    @media (max-width:570px) {
+        @content;
+    }
+}
+
+@mixin Md{
+    @media (min-width: 992px) and (max-width:1199px) {
+        @content;
+    }
+}
+
+@mixin Lg {
+    @media (max-width:1171px){
+        @content;
+    }
+}

@@ -1,0 +1,255 @@
+/*----------------------
+-COLOR:
+#ffffff
+#959794
+#45433e
+#19171a
+#e9322e
+-----------------------*/
+.item-position, .need, .service, .download, .in_touch {
+  padding: 5rem 0;
+  text-align: center; }
+
+.W_F, header .logo, header ul {
+  width: 50%;
+  float: left; }
+
+.h2, .home h2, .need h2, .service h2, .download h2, .in_touch h2 {
+  font-size: 2.5rem;
+  color: white; }
+
+.span, .home span, .need span, .service span, .in_touch > span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #e9322e;
+  margin: 1rem auto; }
+
+.p, .home p, .need p, .in_touch p {
+  margin: 1.5rem 0;
+  color: #959794;
+  letter-spacing: 2px;
+  line-height: 1.5; }
+
+.button, .home button, .need button, .download button {
+  background: #e9322e;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 2s ease-in-out; }
+  .button:hover, .home button:hover, .need button:hover, .download button:hover {
+    background: white;
+    color: #e9322e; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.Container {
+  width: 85%;
+  margin: auto; }
+
+header {
+  background: rgba(25, 23, 26, 0.7);
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999; }
+  header .logo h2 {
+    padding: 10px 0;
+    color: white; }
+  header ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 100px; }
+    header ul li {
+      padding: 10px 15px; }
+      header ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        transition: all 1.5s ease-in-out; }
+        header ul li a:hover {
+          color: #e9322e; }
+
+.home {
+  background: url("../img/hero-bg.jpg");
+  height: 100vh;
+  background-size: cover;
+  text-align: center;
+  position: relative; }
+  .home .homecontent {
+    position: absolute;
+    top: 54%;
+    left: 25%;
+    transform: translate(-50%, -50%); }
+  .home h2 {
+    font-size: 3rem; }
+
+.need {
+  background: #19171a; }
+  .need h2 {
+    font-size: 2.5rem; }
+  .need span {
+    background: white; }
+  .need button {
+    background: white;
+    color: #e9322e; }
+    .need button:hover {
+      background: #e9322e;
+      color: white;
+      border: 1px solid white; }
+
+.service {
+  background: white; }
+  .service h2 {
+    font-size: 2.5rem;
+    color: #19171a; }
+  .service .service-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin: 1.5rem 0; }
+  .service i {
+    color: #e9322e; }
+  .service h3 {
+    margin: 1rem 0;
+    color: #19171a; }
+  .service p {
+    color: #959794; }
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 0; }
+  .images > div {
+    position: relative; }
+    .images > div img {
+      width: 100%; }
+    .images > div:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(233, 50, 46, 0.6);
+      opacity: 0;
+      transition: all 1s ease-in-out; }
+    .images > div:hover:after {
+      opacity: 1; }
+
+.download {
+  background: #19171a; }
+  .download button {
+    background: white;
+    color: #19171a;
+    margin: 2rem 0; }
+    .download button:hover {
+      background: #19171a;
+      color: white;
+      border: 1px solid white; }
+
+.in_touch h2 {
+  font-size: 2.5rem -1;
+  color: #19171a; }
+.in_touch p {
+  color: #959794; }
+.in_touch .touch {
+  display: flex;
+  justify-content: center; }
+  .in_touch .touch .item {
+    margin: 1rem 3rem; }
+    .in_touch .touch .item i {
+      display: block;
+      margin: 0.5rem 0;
+      color: #e9322e; }
+
+@media (max-width: 768x) {
+  .W_F, header .logo, header ul {
+    float: none;
+    width: 100%; }
+
+  .h2, .home h2, .need h2, .service h2, .download h2, .in_touch h2 {
+    font-size: 1.5rem; }
+
+  .p, .home p, .need p, .in_touch p {
+    font-size: 1rem; }
+
+  .item-position, .need, .service, .download, .in_touch {
+    padding: 1.5rem 0; }
+
+  header {
+    position: static;
+    text-align: center; }
+    header ul {
+      display: block; }
+
+  .service .service-parent {
+    grid-template-columns: repeat(2, 1fr); }
+
+  .images {
+    grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) and (max-width: 1170px) {
+  .W_F, header .logo, header ul {
+    float: none;
+    width: 100%; }
+
+  .h2, .home h2, .need h2, .service h2, .download h2, .in_touch h2 {
+    font-size: 1.5rem; }
+
+  .p, .home p, .need p, .in_touch p {
+    font-size: 1rem; }
+
+  .item-position, .need, .service, .download, .in_touch {
+    padding: 1.5rem 0; }
+
+  header {
+    position: static;
+    text-align: center; }
+    header ul {
+      display: block; }
+
+  .service .service-parent {
+    grid-template-columns: repeat(2, 1fr); }
+
+  .images {
+    grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 570px) {
+  .W_F, header .logo, header ul {
+    float: none;
+    width: 100%; }
+
+  .h2, .home h2, .need h2, .service h2, .download h2, .in_touch h2 {
+    font-size: 1.5rem; }
+
+  .p, .home p, .need p, .in_touch p {
+    font-size: 1rem; }
+
+  .item-position, .need, .service, .download, .in_touch {
+    padding: 1.5rem 0; }
+
+  header {
+    position: static;
+    text-align: center; }
+    header ul {
+      display: block; }
+
+  .service .service-parent {
+    grid-template-columns: repeat(2, 1fr); }
+
+  .images {
+    grid-template-columns: repeat(2, 1fr); } }
+
+/*# sourceMappingURL=main.css.map */

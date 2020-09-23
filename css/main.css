@@ -6,6 +6,10 @@
 #19171a
 #e9322e
 -----------------------*/
+body{
+  overflow: hidden;
+}
+
 .item-position, .need, .service, .download, .in_touch {
   padding: 5rem 0;
   text-align: center; }
